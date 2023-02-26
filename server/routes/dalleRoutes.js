@@ -12,7 +12,7 @@ const configuration= new Configuration({
 
 const openai=new OpenAIApi(configuration);
 
-router.route('/').get((rer,res)=>{
+router.route('/').get((req,res)=>{
     res.send('hello wupxy form dalle api');
 });
 
