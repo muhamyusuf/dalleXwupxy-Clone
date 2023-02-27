@@ -21,7 +21,7 @@ router.route('/').get(async(req,res)=>{
 
         res.status(200).json({succes:true,data:posts});
     } catch (error) {
-        res.status(500).json({succes:false,message:error});    
+        res.status(500).json({succes:false,message:'Fetching posts failed, please try again'});    
     }
 });
 
@@ -37,9 +37,9 @@ router.route('/').post(async(req,res)=>{
             photo:photoUrl.url
         })
     
-        res.status(201).json({succes:true, data:newPost});
+        res.status(200).json({succes:true, data:newPost});
     } catch (error) {
-        res.status(500).json({succes:false,message:error});
+        res.status(500).json({succes:false,message:'Unable to create a post, please try again'});
     }
 });
 
