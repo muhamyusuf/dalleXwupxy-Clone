@@ -16,7 +16,7 @@ const App = () => (
         <h1 className='mt-[0.24rem]'>Wupxy.</h1>
       </Link>
 
-      <Link to="/create-post" className="font-inter font-medium bg-[#6469ff] text-white px-4 py-2 rounded-md">Create a Post</Link>
+      <Link to="/create-post" className="font-inter font-bold bg-[#6469ff] text-white px-2 py-2 rounded-md text-[10px] xs:text-[20px] xs:px-4">Create a Post</Link>
     </header>
     <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
       <Routes>
