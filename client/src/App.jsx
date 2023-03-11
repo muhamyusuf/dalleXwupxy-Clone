@@ -13,7 +13,7 @@ const App = () => {
 
   return(
     <BrowserRouter>
-      <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 border-b border-b-[#e6ebf4] dark:bg-[#0f172a]">
+      <header className="w-full flex justify-between items-center bg-white sm:px-8 px-4 py-4 dark:bg-[#0f172a]">
         <Link 
           to="/"
           className='flex gap-2 font-bold text-[#222328] text-[18px] justify-center items-center mx-0 xs:mx-[30px]'  
@@ -53,7 +53,7 @@ const App = () => {
           <Link to="/create-post" className="font-inter font-bold bg-[#6469ff] text-white px-2 py-2 rounded-md text-[10px] xs:text-[18px] xs:px-4">Create a Post</Link>
         </div>
       </header>
-      <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)]">
+      <main className="sm:p-8 px-4 py-8 w-full bg-[#f9fafe] min-h-[calc(100vh-73px)] dark:bg-[#0f172a]">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/create-post" element={<CreatePost />} />
